@@ -2,3 +2,10 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+    --main-font: "IBM Plex mono", inter;
+    --font-size: 18px;
+    --font-weight: 400;
+    --line-hight: 23.4px;
+}

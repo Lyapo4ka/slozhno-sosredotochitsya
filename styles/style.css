@@ -352,7 +352,7 @@ figure {
         margin-block-start: 159px;
     }
 
-    .header__text{
+    .header__text {
         margin-block-start: 147px;
     }
 
@@ -398,10 +398,6 @@ figure {
         margin-block-start: 66px;
     }
 
-    .section-images {
-        margin-block-end: 40px;
-    }
-
     .decorated-zone::before {
         bottom: 10px;
         left: 10px;
@@ -443,6 +439,7 @@ figure {
     }
 
     .section-images {
+        margin-block-end: 40px;
         grid-template-columns: 1fr;
         grid-template-areas:
       "text"

@@ -25,13 +25,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    --bg-color: #000028;
-    --text-color: #F1B2CE;
-    --accent-color: #FF0070;
-    --accent-text: #000028;
-    --bg-image: url(../images/cover-image-dark.png);
-    --heading-color: #db00ff;
-    --heading-text: #ff0070;
-    --decorated-color: #ff0070;
-    --hover-color: rgba(255, 0, 112, 0.4);
+    :root {
+        --bg-color: #000028;
+        --text-color: #F1B2CE;
+        --accent-color: #FF0070;
+        --accent-text: #000028;
+        --bg-image: url(../images/cover-image-dark.png);
+        --heading-color: #db00ff;
+        --heading-text: #ff0070;
+        --decorated-color: #ff0070;
+        --hover-color: rgba(255, 0, 112, 0.4);
+    }
 }

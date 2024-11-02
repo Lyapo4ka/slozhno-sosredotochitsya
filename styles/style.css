@@ -1,12 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 .page {
     background-color: var(--bg-color);
@@ -123,11 +116,18 @@ header {
     line-height: 129.53px;
     inset-inline-start: -2%;
     position: relative;
-    margin-block-start: 100px;
 }
 
-.shadow {
+.shadow-header {
     text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.shadow-footer {
+    text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.shadow-link {
+    text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .title-decor {
@@ -155,7 +155,6 @@ a:focus-visible {
     justify-self: end;
     align-self: center;
     max-width: 50%;
-    margin-block-start: 100px;
 }
 
 .section__text {
@@ -260,11 +259,6 @@ a:focus-visible {
     object-position: center;
 }
 
-figure {
-    margin: 0;
-    padding: 0;
-}
-
 .section-images .text {
     grid-area: text;
 }
@@ -306,12 +300,11 @@ figure {
     font-weight: 700;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 82.5%;
-    margin-block-start: 102px;
 }
 
 @media (width >= 600px) {
     header {
-        margin-block-end: 160px;
+        margin-block-end: 60px;
         padding: 20px;
     }
 
@@ -334,7 +327,7 @@ figure {
 
 @media (width <= 768px) {
     header {
-        margin-block-end: 417px;
+        margin-block-end: 60px;
     }
 
     .header__theme-menu {
@@ -344,16 +337,16 @@ figure {
 
     .header__theme-menu-list {
         flex-direction: column;
-        margin-block-start: 172px;
+        margin-block-start: 13px;
     }
 
     .header__title {
         inset-inline-start: -20px;
-        margin-block-start: 159px;
+        margin-block-start: 2px;
     }
 
     .header__text {
-        margin-block-start: 147px;
+        margin-block-start: -17px;
     }
 
     .section-why {
@@ -374,10 +367,9 @@ figure {
     }
 
     .footer__title {
-        margin-block-start: 357px;
+        margin-block-start: 5px;
     }
 }
-
 
 @media (width < 600px) {
 
@@ -395,7 +387,7 @@ figure {
     }
 
     .header__theme-menu-list {
-        margin-block-start: 66px;
+        margin-block-start: 3px;
     }
 
     .decorated-zone::before {
@@ -416,13 +408,12 @@ figure {
     .header__title {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
         inset-inline-start: 1px;
-        margin-block-start: 66px;
         line-height: 95.7px;
     }
 
     .header__text {
         max-inline-size: 350px;
-        margin-block-end: -34px;
+        margin-block-start: -2px;
     }
 
     .section-why {

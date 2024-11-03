@@ -40,3 +40,14 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
